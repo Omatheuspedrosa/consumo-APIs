@@ -32,3 +32,6 @@ No arquivo package.json, criamos o objeto 'script' e atribuimos a ele a chave 's
 
 
 <!-- - O que é o Chocolatey (e porque não instalá-lo agora) -->
+
+Da aula de sexta (10/05):
+- Instalação de dependências de projeto com o comando npm install

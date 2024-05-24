@@ -35,3 +35,22 @@ No arquivo package.json, criamos o objeto 'script' e atribuimos a ele a chave 's
 
 Da aula de sexta (10/05):
 - Instalação de dependências de projeto com o comando npm install
+
+
+## Requisição
+
+Para criar uma nova requisição, podemos utilizar a função fetch API. 
+
+~~~js
+const requisicao = new Request("http://localhost:3000/produtos", {
+  method: "GET",
+  headers: {
+    "Content-type": "aplication/json",
+  },
+});
+~~~
+
+Utilizamos `new Request()` para _instanciar_ a interface `Request()` na váriavel `requisicao`, de forma que ela se torna um objeto com os métodos exigidos por essa interface.
+
+A requisição é constituída por duas partes: uma URL e um objeto JSON contendo as opções da requisição. `method` define o metódo da requisição (GET, POST, PUT, DELETE, etc.) e `headers` define os cabeçalhos da requisição.
+- **URL**: 

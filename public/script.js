@@ -1,13 +1,13 @@
 // fetch(requisicao) // retorna uma resposta
 
-const requisicao = new Request("http://localhost:3000/produtos", {
-  method: "GET",
-  headers: {
+const reqGet = new Request("http://localhost:3000/produtos", {
+  "method": "GET",
+  "headers": {
     "Content-type": "aplication/json",
   },
 });
 
-fetch(requisicao)
+fetch(reqGet)
   .then((resposta) => resposta.json())
   .then((resposta) => {
     const ul = document.createElement("ul");
@@ -20,7 +20,7 @@ fetch(requisicao)
       liDescricao.innerHTML = produto.descricao;
 
       const liPreco = document.createElement("li");
-      liPreco.innerHTML = produto.preco.toFixed(2);
+      liPreco.innerHTML = produto.preco.toFixed(2); 
 
       ul.append(liId, liDescricao, liPreco);
     });
